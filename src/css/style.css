@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 450px;
+    height: 215px;
+}
+
+.wrapper {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+.caroussel {
+    display: flex;
+    flex: row nowrap;
+}
+
+.btn {
+    border: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 215px;
+    width: 20px;
+    color: white;
+    font-size: large;
+    transition: 0.5s;
+    opacity: 0.7;
+    bottom: 0;
+    top: 0;
+}
+
+.btn-left{
+    left: 0;
+    right: auto;
+    background: linear-gradient(to left, transparent 0%, black 150%);
+}
+
+.btn-right{
+    left: auto;
+    right: 0;
+    background: linear-gradient(to right, transparent 0%, black 150%);
+}
+
+.btn-left:hover {
+    opacity: 1.5;
+}
+
+.btn-right:hover {
+    opacity: 1.5;
+}
